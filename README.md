@@ -30,7 +30,7 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 Running Server:
-$ node server.cjs
+`node server.cjs`
 
 Running the app:
-$ npm run dev
+`npm run dev`
