@@ -12,7 +12,7 @@ export default function Result() {
   const client = useQueryClient()
 
 
-  const { data, isLoading, isError, error } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ['Score'],
     queryFn: getScore,
     staleTime: 0, 
