@@ -7,6 +7,7 @@ import { UserPicked, housePicked } from '../Hooks/ContextHook'
 import { useState } from 'react'
 import { choice } from '../Types'
 import Result from './Result'
+import { Link } from 'react-router-dom'
 
 export default function GameBoard() {
    const [isUserPicked, setIsUserPicked] = useState<boolean>(false)
@@ -87,6 +88,10 @@ export default function GameBoard() {
                         </div>
 
                         <Result />
+
+                        <button type="button" className="mt-4 rounded-xl border-gray-500 border-4 px-5 py-2 font-bold text-gray-500 text-xl" disabled>
+                           <Link to="/">Play Again!</Link>
+                        </button>
                      </div>
                }
 

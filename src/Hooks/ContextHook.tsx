@@ -5,10 +5,6 @@ type mute = {
    isMute: boolean,
    setIsMute: Dispatch<SetStateAction<boolean>>
 }
-type scoreType = {
-   score: number,
-   setScore: Dispatch<SetStateAction<number>>
-}
 
 type userChoice = {
    isUserPicked: boolean,
@@ -44,11 +40,5 @@ const housePicked = createContext<houseChoice>({
    setHousesChoice: () => { },
 })
 
-const ScoreContext = createContext<scoreType>({
-   score: 0,
-   setScore: ()=>{}
-})
-
-
-export { MuteContext, UserPicked, housePicked, ScoreContext }
+export { MuteContext, UserPicked, housePicked }
 
